@@ -5,13 +5,13 @@ Mysql UDF to add a clone of NOW() that return microseconds
 
 After installing it, just execute in the mysql shell:
 
-<code>
+```
 CREATE FUNCTION microsecnow RETURNS INTEGER SONAME 'microsecnow.so';
-</code>
+```
 
 and the you can do:
 
-<code>
+```
 mysql> SELECT MICROSECNOW();
 +------------------+
 | MICROSECNOW()    |
@@ -22,4 +22,4 @@ mysql> SELECT MICROSECNOW();
 
 mysql> 
 
-</code>
+```
